@@ -6,7 +6,11 @@
   "scripts": {
     "start": "concurrently npm \"npm run dev-frontend\" \"npm run dev-backend\"",
     "dev-frontend": "cd frontend && npm start",
-    "dev-backend": "nodemon backend/app.js"
+    "dev-backend": "nodemon backend/app.js",
+    
+    "reference-frontend": "cd Ref/ && cd youtube-react-blog-ui && npm start",
+    "reference-backend": "cd Ref/ && cd youtube-blog-rest-api && npm start",
+    "reference": "concurrently npm \"npm run reference-frontend\" \"npm run reference-backend\""
   },
   "repository": {
     "type": "git",
