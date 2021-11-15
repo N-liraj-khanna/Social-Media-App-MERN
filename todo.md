@@ -17,7 +17,7 @@ Models
     - description
     - Time Stamp
     - Image Cover
-    - Audio (Optional)  
+    - Audio (Later)  
     - Video (Later)
     - Categories - Many to Many key(Later)
 
