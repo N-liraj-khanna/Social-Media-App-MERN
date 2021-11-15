@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100%;
+  background: #fd1d1d; 
+  background: -moz-linear-gradient(-45deg,  #fd1d1d 0%, #833ab4 100%); 
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fd1d1d), color-stop(100%,#833ab4));
+  background: -webkit-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
+  background: -o-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%); 
+  background: -ms-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
+  background: linear-gradient(135deg,  #fd1d1d 0%,#833ab4 100%); 
+  background-attachment: fixed;
+}
+  
+
+a {
+  text-decoration: none;
+}
+
+
+@import "./_home.scss";
+@import "./login_signup";
+
