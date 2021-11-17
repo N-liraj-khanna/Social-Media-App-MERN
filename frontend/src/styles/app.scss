@@ -10,13 +10,7 @@ html,
 body {
   font-family: "Karla", sans-serif;
   min-height: 100%;
-  background: #fd1d1d; 
-  background: -moz-linear-gradient(-45deg,  #fd1d1d 0%, #833ab4 100%); 
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fd1d1d), color-stop(100%,#833ab4));
-  background: -webkit-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
-  background: -o-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%); 
-  background: -ms-linear-gradient(-45deg,  #fd1d1d 0%,#833ab4 100%);
-  background: linear-gradient(135deg,  #fd1d1d 0%,#833ab4 100%); 
+  background: #d1f0ed; 
   background-attachment: fixed;
 }
   
@@ -28,4 +22,5 @@ a {
 
 @import "./_home.scss";
 @import "./login_signup";
+@import "./_navbar.scss";
 

@@ -1,7 +1,7 @@
 
 .home h1{
   font-size: 3.5rem;
-  color:rgb(220, 236, 250);
+  color:rgb(68, 68, 68);
   margin-bottom: 1rem;
 }
 
@@ -19,7 +19,7 @@ $color : #f26522;
   width:30%;
   
   a {
-    color: white;
+    color: rgb(46, 46, 46);
     padding: $pad $extra;
     display: inline-block;
     border: $thick solid transparent;
