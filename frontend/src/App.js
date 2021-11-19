@@ -1,4 +1,4 @@
-// ?General Imports 
+// ?General Imports
 import React from "react";
 import "./styles/app.scss";
 
@@ -10,16 +10,22 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import MediaHome from "./components/MediaHome";
+import MediaDetail from "./components/MediaDetail";
 
 function App() {
+  const profilePic = "http://localhost:5000/images/profile.jpg";
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<Signup/>} />
-          <Route path="/medias" element={<MediaHome/>} />
-          <Route path="/" element={<Home/>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/medias"
+            element={<MediaHome profilePic={profilePic} />}
+          />
+          <Route path="/media/:id" element={<MediaDetail profilePic={profilePic} />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </Router>
     </div>

@@ -1,5 +1,5 @@
 // *General Imports
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 // *Partials
 import NavBar from "./partials/_navbar";
@@ -10,19 +10,20 @@ const getData = async (setMedia) => {
   setMedia(response.data.data);
 };
 
-const MediaHome = () => {
-  const profilePic = "http://localhost:5000/images/profile.jpg";
-
+const MediaHome = ({ profilePic }) => {
   const [medias, setMedias] = useState([]);
-  getData(setMedias);
-
+  useEffect(() => {
+    getData(setMedias);
+  }, []);
   return (
     <div className="media-home">
-      <NavBar profilePic={profilePic} />
       <h1 className="media-heading">SPEAK OUT LOUD...</h1>
-      {medias.map((media)=>(
-        <Media media={media} key={media._id}/>
-      ))}
+      <NavBar profilePic={profilePic} />
+      <div className="medias-list">
+        {medias.map((media) => (
+          <Media media={media} key={media._id} />
+        ))}
+      </div>
     </div>
   );
 };
