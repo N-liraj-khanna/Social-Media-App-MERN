@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
   // *States
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
   // *Handlers
   const login = () => {};
 
   return (
     <div className="login">
       <h1>Login</h1>
-      <div className="error">{error}</div>
+      {/* <div className="error">{error}</div> */}
       <form onSubmit={login} id="login-form" method="post" autoComplete="off">
         <input
           type="text"

@@ -5,7 +5,12 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Speak Out Loud</h1>
-      <img src="img/logo.png" alt="Logo" width="128" height="128" />
+      <img
+        src="http://localhost:5000/images/logo.png"
+        alt="Logo"
+        width="128"
+        height="128"
+      />
       <div className="buttons">
         <Link to="/signup">
           <span className="text">Sign Up</span>

@@ -1,37 +1,37 @@
-.navbar{
+// ?NavBar
+.navbar {
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.navbar .nav-links{
+.navbar .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  a{
+  a {
     margin: 0 1rem 0 1rem;
     color: rgb(78, 78, 78);
     font-size: 1.5rem;
   }
-
 }
-.navbar .user-search{
+.navbar .user-search {
   display: flex;
   align-items: center;
   position: absolute;
   right: 5rem;
-  span{
+  span {
     margin: 0 1rem 0 1rem;
   }
 }
 
-.fa-search{
+.fa-search {
   cursor: pointer;
 }
 
-.profile-pic img{
+.profile-pic img {
   width: 40px;
   height: 40px;
-  border-radius:100%;
+  border-radius: 100%;
 }

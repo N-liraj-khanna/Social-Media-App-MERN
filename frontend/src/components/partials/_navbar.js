@@ -1,8 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-const Navbar = () => {
-
-  const profilePic="/img/profile.jpg";
+const Navbar = ({profilePic}) => {
 
   return (
     <nav className="navbar">
@@ -15,7 +13,7 @@ const Navbar = () => {
       </div>
       <div className="user-search">
         <span className="fas fa-search fa-lg"></span>
-        <span className="profile-pic"><img src={profilePic}/></span>
+        <span className="profile-pic"><img src={profilePic} alt="profile-pic"/></span>
       </div>
 
     </nav>

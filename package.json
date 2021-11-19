@@ -7,7 +7,6 @@
     "start": "concurrently npm \"npm run dev-frontend\" \"npm run dev-backend\"",
     "dev-frontend": "cd frontend && npm start",
     "dev-backend": "nodemon backend/app.js",
-    
     "reference-frontend": "cd Ref/ && cd youtube-react-blog-ui && npm start",
     "reference-backend": "cd Ref/ && cd youtube-blog-rest-api && npm start",
     "reference": "concurrently npm \"npm run reference-frontend\" \"npm run reference-backend\""
@@ -25,6 +24,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "concurrently": "^6.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1"

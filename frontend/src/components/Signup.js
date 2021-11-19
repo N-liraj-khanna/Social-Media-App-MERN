@@ -1,16 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
   // *States
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
   // *Handlers
   const sign_up = () => {};
 
   return (
     <div className="signup">
       <h1>Sign Up</h1>
-      <div className="error">{error}</div>
+      {/* <div className="error">{error}</div> */}
       <form onSubmit={sign_up} autoComplete="off" id="signup-form">
         <input
           type="email"
