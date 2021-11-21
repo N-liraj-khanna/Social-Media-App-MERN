@@ -1,9 +1,10 @@
 // ?IMPORTS
+const cors = require("cors");
 const express = require("express");
+const connectDB = require("./config/db");
 const path = require("path");
 const userRouter = require("./router/user.router");
 const dummyDataRouter = require("./router/dummy_data.router");
-const cors = require("cors");
 require("dotenv").config({ path: "./backend/config/config.env" });
 
 // ?CONSTANTS
@@ -11,6 +12,8 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 // ?CONFIG
+// *Connect to database server
+connectDB();
 // *Routes Middleware
 app.use(cors());
 app.use("/api/user", userRouter);

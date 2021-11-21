@@ -1,23 +1,22 @@
-
-.home h1{
+.home h1 {
   font-size: 3.5rem;
-  color:rgb(68, 68, 68);
+  color: rgb(68, 68, 68);
   margin-bottom: 1rem;
 }
 
 // Buttons Styling
-$thick : 3px;
-$pad : 0.7em;
-$extra : calc(#{$pad} * 1.2);
-$color : #f26522;
+$thick: 3px;
+$pad: 0.7em;
+$extra: calc(#{$pad} * 1.2);
+$color: #f26522;
 
 .buttons {
   background: transparent;
   margin-top: 1rem;
-  display:flex;
-  justify-content:space-between;
-  width:30%;
-  
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+
   a {
     color: rgb(46, 46, 46);
     padding: $pad $extra;
@@ -27,31 +26,34 @@ $color : #f26522;
     font-size: 1.5em;
     cursor: pointer;
     letter-spacing: 0.07em;
+    text-decoration: none;
+
+    :hover {
+      color: rgb(46, 46, 46);
+    }
 
     .text {
       // padding: 0 0.3em;
       font-family: proxima-nova, monospace;
-      transform: translate3d(0,$pad,0);
+      transform: translate3d(0, $pad, 0);
       display: block;
-      transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+      transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
     }
 
     &:after {
       position: absolute;
-      content: '';
+      content: "";
       bottom: -$thick;
       left: $extra;
       right: $extra;
       height: $thick;
       background: $color;
       // z-index: -1;
-      transition: 
-        transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
-        right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
-        left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+      transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s,
+        right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s,
+        left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
       transform-origin: left;
     }
-
   }
 
   .line {
@@ -63,20 +65,20 @@ $color : #f26522;
       width: $thick;
       bottom: -$thick;
       top: -$thick;
-      transform: scale3d(1,0,1);
-    }  
+      transform: scale3d(1, 0, 1);
+    }
 
     &.-top,
     &.-bottom {
       height: $thick;
       left: -$thick;
       right: -$thick;
-      transform: scale3d(0,1,1);
+      transform: scale3d(0, 1, 1);
     }
 
     &.-right {
       right: -$thick;
-      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+      transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
       transform-origin: top;
     }
 
@@ -94,35 +96,32 @@ $color : #f26522;
 
     &.-bottom {
       bottom: -$thick;
-      transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+      transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
       transform-origin: right;
-    }  
+    }
   }
 
   a:hover,
   a:active {
-
     .text {
-      transform: translate3d(0,0,0);
-      transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
     }
 
     &:after {
-      transform: scale3d(0,1,1);
+      transform: scale3d(0, 1, 1);
       right: -$thick;
       left: -$thick;
       transform-origin: right;
-      transition: 
-        transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
-        right 0.2s cubic-bezier(1,0,.65,1.01),
-        left 0s 0.3s;
+      transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s,
+        right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
     }
 
     .line {
-      transform: scale3d(1,1,1);
+      transform: scale3d(1, 1, 1);
 
       &.-right {
-        transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+        transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
         transform-origin: bottom;
       }
 
@@ -137,18 +136,17 @@ $color : #f26522;
       }
 
       &.-bottom {
-        transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+        transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
         transform-origin: left;
       }
     }
-
   }
 }
 
-.home{
-  height:100vh;
+.home {
+  height: 100vh;
   display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

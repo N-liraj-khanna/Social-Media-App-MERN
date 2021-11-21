@@ -17,12 +17,14 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 
 @import "./_home.scss";
 @import "./login_signup";
 @import "./_navbar.scss";
-@import "./medias.scss";
+@import "./_medias.scss";
+@import "./_write.scss";
 
 
