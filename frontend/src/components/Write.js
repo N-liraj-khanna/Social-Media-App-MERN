@@ -4,7 +4,6 @@ import NavBar from "./partials/_navbar";
 const Write = ({ profilePic }) => {
   const formSubmitted = (e) => {
     e.preventDefault();
-    
   };
 
   return (

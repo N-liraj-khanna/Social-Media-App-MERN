@@ -7,10 +7,10 @@ const Media = ({ media }) => {
         <img className="card-img-top" src={media.image} alt="media-img" />
       </Link>
       <div className="card-body">
-        <Link to="/user" style={{ textDecoration: 'none' }}>
+        <Link to="/user" style={{ textDecoration: "none" }}>
           <h6 className="font-italic">By {media.user}</h6>
         </Link>
-        <Link to={`/medias/${media._id}`} style={{ textDecoration: 'none' }}>
+        <Link to={`/medias/${media._id}`} style={{ textDecoration: "none" }}>
           <h5 className="card-title">{media.subject}</h5>
         </Link>
         <p className="card-text text-justify">

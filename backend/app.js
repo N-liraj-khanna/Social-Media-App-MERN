@@ -4,7 +4,7 @@ const express = require("express");
 const connectDB = require("./config/db");
 const path = require("path");
 const userRouter = require("./router/user.router");
-const dummyDataRouter = require("./router/dummy_data.router");
+const dummyDataRouter = require("./router/data.router");
 require("dotenv").config({ path: "./backend/config/config.env" });
 
 // ?CONSTANTS

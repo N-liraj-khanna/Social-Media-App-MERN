@@ -1,10 +1,11 @@
-const data = require('../data');
+const Media = require("../models/media.models");
 
-exports.dataController = (req,res)=>{
-  return  res.json(data.module);
-}
+exports.dataController = async (req, res) => {
+  const data = await Media.find();
+  return res.json({ data: data });
+};
 
-exports.singleDataController = (req,res)=>{
-  const a = data.module.data.find((d)=>d._id=req.params.id);
-  return res.json({data: a});
-}
+exports.singleDataController = async (req, res) => {
+  const data = await Media.findById(req.params.id);
+  return res.json({ data: data });
+};
