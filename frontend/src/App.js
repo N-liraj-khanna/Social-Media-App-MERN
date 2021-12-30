@@ -13,7 +13,7 @@ import MediaHome from "./components/MediaHome";
 import MediaDetail from "./components/MediaDetail";
 import Write from "./components/Write";
 
-function App() {
+function App() {0
   const profilePic = "http://localhost:5000/images/profile.jpg";
   return (
     <div className="App">
